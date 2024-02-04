@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
     .kota{
@@ -25,6 +26,19 @@
     <button class="w3-bar-item w3-button" onclick="openKota('biodata')">BIODATA</button>
     <button class="w3-bar-item w3-button" onclick="openKota('kemampuan')">KEMAMPUAN</button>
     <button class="w3-bar-item w3-button" onclick="openKota('skill')">JUJITSU</button>
+    <div class="w3-dropdown-hover">
+        <button class="w3-bar-item w3-button">ABOUT ME
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-bar-block" style="top: 219px;">
+          <a href="#" class="w3-bar-item w3-button">
+            <button class="w3-bar-item w3-button" onclick="openKota('me')">ME</button>
+          </a>
+          <a href="#" class="w3-bar-item w3-button">
+            <button class="w3-bar-item w3-button" onclick="openKota('hoby')">HOBY</button>
+          </a>
+        </div>
+    </div> 
 </div>
 <div id="beranda" class="w3-container kota w3-animate-zoom w3-deep-purple">
     <div class="w3-bar">
@@ -154,7 +168,47 @@
         <p class="w3-large">6.Kemampuan spesial</p>
         <p>Enam Mata (六りく眼がん Rikugan ? ): Tidak banyak yang diketahui tentang Enam Mata, namun diketahui bahwa mereka berperan dalam penggunaan Limitless secara tepat. Dinyatakan bahwa mirip dengan Limitless, Six Eyes juga merupakan Teknik Bawaan yang diwarisi melalui keluarga Gojo. Yuta telah menyatakan bahwa Enam Mata memungkinkan Satoru untuk mengurangi konsumsi energi terkutuknya dari aktivasi teknik hingga mendekati nol, dan sebagai hasilnya, dia tidak akan pernah kehabisan energi terkutuk dalam pertarungan. Tidak pasti apakah hal ini mengacu pada biaya teknik itu sendiri atau pengurangan kerugian yang tidak perlu demi efisiensi. Penggunaan "Output Energi Terkutuk Maksimum" sepertinya menyiratkan yang terakhir. Hal ini sangat tersirat bahwa Enam Mata memungkinkan pengguna untuk melihat dunia dalam hal massa, kecepatan, energi, dan sebagainya di samping efek lainnya.</p>
     </div> 
+</div>
 
+<div id="me" class="w3-container kota w3-black" style="display:none">
+    <center>
+    <style type="text/css">
+        .img_me{
+            float: top;
+        }
+    </style>
+    <img class="img_me" src="iki.jpeg" width="500px" height="500px">
+    <div class="w3-panel w3-deep-purple">
+        <p>
+            Name   : Rizki Eskhart
+            <br>
+            NIM     : 10123457
+            <br>
+            kelas   : IF-11
+        </p>
+    </div>
+    </center>
+</div>
+
+<div id="hoby" class="w3-container kota w3-black" style="display:none">
+        <style type="text/css">
+            .img_hb{
+                float:left;
+            }
+            .img_gm{
+                float:top;
+            }
+            
+        </style>
+        <div class="w3-panel w3-black">
+        <h1>1.Renang</h1>
+        <img class="img_hb" src="renang.webp" width="250px" height="250px">
+        </div>
+        <div class="w3-panel w3-black">
+        <h1>2.Game</h1>
+        <br>
+        <img class="img_gm" src="game.jpg" width="250px" height="250px">
+        </div>
 </div>
 <script>
 function openKota(namakota) {
